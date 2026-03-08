@@ -53,5 +53,5 @@ This repo also includes an installable skill at `skills/plant-journal/SKILL.md`.
 With `skills.sh`, install it from the repo with:
 
 ```bash
-npx skills add <repo-url> --skill plant-journal
+npx skills add https://github.com/JonathanRiche/plant-journal --skill plant-journal
 ```

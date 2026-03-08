@@ -27,6 +27,7 @@ zig build test
 
 ```bash
 plant-journal help
+plant-journal -h
 plant-journal add monstera --interval-days 7 --species deliciosa --notes "Bright indirect light" --last-watered today
 plant-journal water monstera --notes "Top soil dry"
 plant-journal list

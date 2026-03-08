@@ -28,6 +28,7 @@ The current commands are:
 
 ```bash
 zig build run -- help
+zig build run -- -h
 zig build run -- add <name> --interval-days <days> [--species <text>] [--notes <text>] [--last-watered <YYYY-MM-DD|today>]
 zig build run -- water <name> [--date <YYYY-MM-DD|today>] [--interval-days <days>] [--notes <text>]
 zig build run -- list

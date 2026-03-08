@@ -245,7 +245,7 @@ fn run(allocator: std.mem.Allocator) !void {
     }
 
     const command = args.items[1];
-    if (std.mem.eql(u8, command, "help")) {
+    if (std.mem.eql(u8, command, "help") or std.mem.eql(u8, command, "-h") or std.mem.eql(u8, command, "--help")) {
         try writeHelp(&stdout_writer.interface);
         return;
     }
@@ -383,6 +383,8 @@ fn writeHelp(writer: *std.Io.Writer) !void {
         \\  plant-journal list
         \\  plant-journal show <name>
         \\  plant-journal help
+        \\  plant-journal -h
+        \\  plant-journal --help
         \\
         \\Data location:
         \\  Uses $PLANT_JOURNAL_DB when set.
